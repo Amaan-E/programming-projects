@@ -3,19 +3,19 @@
 #include <stdio.h>
 int main() {
 
-	long i, n, a = 0, b = 1;
+	int i, n, a = 0, b = 1;
 
-	long c = a + b;
+	int c = a + b;
 
 	printf("Enter the number of terms: ");
-	scanf("%ld", &n);
+	scanf("%d", &n);
 
 	// print the first two terms
-	printf("Fibonacci Series: %ld, %ld, ", a, b);
+	printf("Fibonacci Series: %d, %d, ", a, b);
 
 	for (i = 3; i <= n; ++i) 
 	{
-		printf("%ld, ", c);
+		printf("%d, ", c);
 		a = b;
 		b = c;
 		c = a + b;
