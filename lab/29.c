@@ -1,14 +1,25 @@
-// Display star pattern
+/*Check whether a number is Armstrong number or not*/
 #include <stdio.h>
 
-int main()
-{
-	int i, j;
+int main() {
+	int q, r, n, og, cubeSum = 0;
+	printf( "Check whether a number is Armstrong number or not: " );
+	scanf( "%d", &n );
+	og = n;
 	
-	for(i = 0; i < 4; ++i)
-	{
-		for(j = 0; j <= i; ++j)
-			printf("*");
-	printf("\n");
+	while ( n != 0 ) {
+		q = n / 10;
+		r = n % 10;
+		cubeSum += r * r * r;
+		n = q;
 	}
+
+	if ( cubeSum == og ) {
+		printf( "Number is Armstrong." );
+	} else {
+		printf( "Number is not Armstrong." );
+	}
+
+	return 0;
 }
+

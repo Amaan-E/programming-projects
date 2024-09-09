@@ -1,37 +1,52 @@
-// Search an array using function
+/* Find product of two matrices. */
 #include <stdio.h>
-#define MAX_SIZE 50
-int search( int a[], int n, int x );
 
-int main() {
-    int a[ MAX_SIZE ], n, x, i, d;
-    printf( "Enter the size of the integer array: " );
-    scanf( "%d", &n );
-    printf( "Enter the elements of the integer array: \n" );
-    for ( i = 0; i < n; i++ ){
-        scanf( "%d", &a[i] );
-    }
-    printf( "Enter the number you want to search in the array: " );
-    scanf( "%d", &x );
-    d = search( a, n, x );
-    if ( d == -1 ) {
-    	printf( "Not found" );
-	} else {
-    	printf( "Found at position %d.", d );
-	}
-}
+#define N 10
 
-/*
-===================
-Searchs an array
-===================
-*/
-int search( int a[], int n, int x ){
-    int i;
-    for( i = 0; i < n; i++ ){
-        if( x == a[ i ] ){
-          return i + 1;
+int main( void ) {
+    int a[ N ][ N ], b[ N ][ N ], c[ N ][ N ], m, n, o, p, i, j, k;
+    
+    printf( "Enter dimensions of matrix 1 as 'm n': " );
+    scanf( "%d %d", &m, &n );
+    
+    printf( "Enter elements of matrix 1 row-wise:\n" );
+    for ( i = 0; i < m; i++ ) {
+        for ( j = 0; j < n; j++ ) {
+            scanf( "%d", &a[ i ][ j ] );
         }
     }
-        return -1;
+    
+    printf( "Enter dimensions of matrix 2 as 'o p': " );
+    scanf( "%d %d", &o, &p );
+    
+    if ( n != o ) {
+        printf( "Matrix multiplication not possible. Number of columns in matrix 1 must equal number of rows in matrix 2.\n" );
+        return 1;
     }
+    
+    printf( "Enter elements of matrix 2 row-wise:\n" );
+    for ( i = 0; i < o; i++ ) {
+        for ( j = 0; j < p; j++ ) {
+            scanf( "%d", &b[ i ][ j ] );
+        }
+    }
+    
+    for ( i = 0; i < m; i++ ) {
+        for ( j = 0; j < p; j++ ) {
+            c[ i ][ j ] = 0;
+            for ( k = 0; k < n; k++ ) {
+                c[ i ][ j ] += a[ i ][ k ] * b[ k ][ j ];
+            }
+        }
+    }
+    
+    printf( "Product of matrices:\n" );
+    for ( i = 0; i < m; i++ ) {
+        for ( j = 0; j < p; j++ ) {
+            printf( " %d ", c[ i ][ j ] );
+        }
+        printf( "\n" );
+    }
+    
+    return 0;
+}

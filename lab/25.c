@@ -1,17 +1,19 @@
-//Display 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 ...n times
+// Display the series: 1 2 2 3 3 3 4 4 4 4 ....... (up to n)[nesting of loops]
 #include <stdio.h>
 
-int main(void)
-{
-	int i, j, n;
+int main() {
+	int n;
+	printf( "Enter n: " );
+	scanf( "%d", &n ); 
 	
-	printf("Enter 'n': ");
-	scanf("%d", &n);
+	int i, j;
+	for ( j = 1; j <= n; j++ ) {
+		for ( i = 1; i <= j; i++ ) {
+			printf( "%d ", j );
+		}
 	
-	for (i = 1; i <= n; ++i)
-	{
-		for (j = 1; j <= 5; ++j)
-			printf("%d ", j);
 	}
+	
+	return 0;
 
 }

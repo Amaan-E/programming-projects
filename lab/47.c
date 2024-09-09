@@ -1,28 +1,33 @@
-// Input and display matrix
+/*Search for an element in an integer array (Linear search).*/
 #include <stdio.h>
-#define ROW_MAX_SIZE 10
-#define COL_MAX_SIZE 10
 
-int main ( void ) {
-	int row, col, rowSize, colSize;
-	int matrix [ ROW_MAX_SIZE ] [ COL_MAX_SIZE ];
+#define N 20
+
+int main() {
+	int a[ N ], i, n, s, found = 0;
 	
-	printf( "Enter rank of matrix: \n" );
-	scanf( "%d%d", &rowSize, &colSize );
+	printf( "Enter no. of elements to store in the array: " );
+	scanf( "%d", &n );
 	
-	printf( "Enter elements of matrix(row-wise): \n" );
-	for ( col = 0; col < colSize; ++col ) {
-		for ( row = 0; row < rowSize; ++row ) {
-			scanf( "%d", &matrix[ row ][ col ] );
+	printf( "Enter elements to store in the array:\n" );
+	for ( i = 0; i <= n - 1; i++ ) {
+		scanf( "%d", &a[ i ] );
+	}
+	
+	printf( "Enter an element to find its position: " );
+	scanf( "%d", &s );
+	
+	for ( i = 0; i <= n - 1; i++ ) {
+		if ( s == a[ i ] ) {
+			printf( "Found %d at position %d.", a[ i ], i + 1 );
+			found = 1;
 		}
 	}
 	
-	printf( "Entered matrix: \n" );
-	for ( col = 0; col < colSize; ++col ) {
-		for ( row = 0; row < rowSize; ++row ) {
-			printf( "%d ", matrix[ row ][ col ] );
-		}
-		printf( "\n" );
+	if ( found == 0 ) {
+		printf( "Not Found!" );
 	}
 	
+	return 0;
 }
+

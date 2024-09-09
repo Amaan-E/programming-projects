@@ -1,16 +1,13 @@
-//Compare two integers using ternary
+//Use ternary operator
+
 #include <stdio.h>
 
-int main()
-{
-	int a, b;
+int main() {
+	int x, y;
+	printf( "Enter two numbers to compare them: \n" );
+	scanf( "%d %d", &x, &y );
 	
-	printf("Enter First Integer: ");
-	scanf("%d", &a);
-	printf("Enter Second Integer: ");
-	scanf("%d", &b);
-	
-	(a > b) ? printf("%d is bigger than %d.", a, b) : (a == b) ? printf("%d is equal to %d.", a, b) : printf("%d is bigger than %d.", b, a);	
+	x > y ?	printf( "%d is greater than %d.", x, y ) : x < y ?	printf( "%d is greater than %d.", y, x ) :	printf( "Both are equal." );
 	
 	return 0;
 }

@@ -1,17 +1,16 @@
-//Display product of series from 1 to n
+/*Find product of series: 1 2 3 4 5 .... n*/
 #include <stdio.h>
 
-int main(void)
-{
-	int i, n, pro = 1;
-	
-	printf("Enter 'n': ");
-	scanf("%d", &n);
-	
-	for (i = 1; i <= n; ++i)
-	{
-		pro *= i;
+int main() {
+	int i, n, prod = 1;
+	printf( "Enter n: " );
+	scanf( "%d", &n );
+	for( i = 1; i <= n; i++ ) {
+		prod *= i;
 	}
+	printf( "Product = %d ", prod );
 	
-	printf("Product of series: %d ", pro);
+	return 0;
 }
+
+

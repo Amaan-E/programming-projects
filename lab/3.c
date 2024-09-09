@@ -1,26 +1,18 @@
-//Compare two integers
+//Read two numbers from keyboard and compare them
+
 #include <stdio.h>
 
-int main()
-{
-	int a, b;
+int main() {
+	int x, y;
+	printf( "Enter two numbers to compare them: \n" );
+	scanf( "%d %d", &x, &y );
 	
-	printf("Enter First Integer: ");
-	scanf("%d", &a);
-	printf("Enter Second Integer: ");
-	scanf("%d", &b);
-	
-	if (a > b)
-	{
-		printf("%d is bigger than %d.", a, b);	
-	}
-	else if (a == b)
-	{
-		printf("%d is equal to %d.", a, b);	
-	}	
-	else
-	{
-		printf("%d is bigger than %d.", b, a);	
+	if( x > y ) {
+		printf( "%d is greater than %d.", x, y );
+	} else if( x < y ) {
+		printf( "%d is greater than %d.", y, x );
+	} else {
+		printf( "Both are equal." ); 
 	}
 	
 	return 0;

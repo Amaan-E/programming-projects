@@ -1,19 +1,23 @@
-//Display the series: 2 4 8 16 32 64... n
+/*Check whether a number is prime or not*/
 #include <stdio.h>
-//#include <math.h>
 
-int main(void)
-{
-	int i, n, s = 2;
+int main() {	
+	int i, n, prime = 1;
 	
-	printf("Enter postive integer: ");
-	scanf("%d", &n);
+	printf( "Enter a number to check whether it is prime or not: ");
+	scanf( "%d", &n );
 	
-	for (i = 1; i <= n; ++i)
-	{
-			//s = pow(2,i);
-			printf("%d ", s);
-			s = s * 2;
+	for ( i = 2; i <= n - 1; i++ ) {
+		if ( n % 2 == 0 ) {
+			prime = 0;
+		}
+	}
+	
+	if ( prime  == 1 ) {
+		printf( "Number is prime." );
+	} else {
+		printf( "Number is  NOT prime." );
 	}
 
+	return 0;
 }

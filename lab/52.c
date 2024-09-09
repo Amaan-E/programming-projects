@@ -1,37 +1,37 @@
-//a + b a - b b - a using function
+/*Find sum of two matrices.*/
 #include <stdio.h>
-int add( int, int );
-int sub( int, int );
+
+#define N 10
 
 int main() {
-	int a, b;
-	printf( "Enter first integer: " );
-	scanf( "%d", &a );
-	printf( "Enter second integer: " );
-	scanf( "%d", &b );
+	int a[ N ][ N ], b[ N ][ N ], m, i, j; 
 	
-	add( a, b );
-	sub( a, b );
-	sub( b, a );
+	printf( "Enter rank of matrix as 'm' (a square matrix, m x m): ");
+	scanf( "%d", &m );
+
+	printf( "Enter elements of matrix 1 row-wise:\n" );
+	for ( i = 0; i < m; i++ ) {
+		for ( j = 0; j < m; j++ ) {
+			scanf( "%d", &a[ i ][ j ] );
+		}
+	}
+	
+	printf( "Enter elements of matrix 2 row-wise:\n" );
+	for ( i = 0; i < m; i++ ) {
+		for ( j = 0; j < m; j++ ) {
+			scanf( "%d", &b[ i ][ j ] );
+		}
+	}
+	
+	printf( "Sum of matrices:\n" );
+	for ( i = 0; i < m; i++ ) {
+		for ( j = 0; j < m; j++ ) {
+			printf( "%d ", a[ i ][ j ] + b[ i ][ j ] );
+		}
+		printf( "\n" );
+	}
+	
 	
 	return 0;
-}
-
-/*
-===================
-Adds two integers
-===================
-*/
-int add ( int a, int b ) {
-	printf( "Sum: %d\n", a + b );
-}
-
-/*
-======================
-Subtracts two integers
-======================
-*/
-int sub ( int a, int b ) {
-	printf( "Difference: %d\n", a - b );
 }
 

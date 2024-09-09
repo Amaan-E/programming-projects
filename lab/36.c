@@ -1,22 +1,23 @@
-//Display contents of an integer array
+/*Display the following pattern (using loops):
+		*
+	   * *
+	  *	* *
+	 * * * * 
+*/
 #include <stdio.h>
 
-int main()
-{
-	int i, a[100], size;
-	printf("Enter size of array: ");
-	scanf("%d", &size);
-	size = size - 1;
+int main() {
+	int i, j, k;
 	
-	printf("Enter integers: \n");
-	for(i = 0; i <= size; ++i)
-	{
-		scanf("%d", &a[i]);
-	}
-	
-	for(i = 0; i <= size; ++i)
-	{
-		printf("%d ", a[i]);
+	for( i = 1; i <= 4; i++ ) {
+		for( k = 4; k >= i; k--) {
+			printf( " " );
+		}
+		for ( j = 1; j <= i; j++ ) {
+			printf( " * " );
+		}
+		printf( "\n" );
 	}
 
+	return 0;
 }

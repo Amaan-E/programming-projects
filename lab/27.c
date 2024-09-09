@@ -1,17 +1,19 @@
+// Find sum of series: 1 + 1/2 + 1/4 + 1/6 + ….+ 1/n
 #include <stdio.h>
 
-int main()
-{
-	int n, r;
+int main() {
+	int n;
+	printf( "Enter n: " );
+	scanf( "%d", &n ); 
 	
-	printf("Write integers to be reversed: ");
-	scanf("%d", &n);
-	
-	while(n != 0)
-	{
-		r = n % 10;
-		n = n / 10;
-		printf("%d", r);
+	int i;
+	double sum = 1;
+	for ( i = 2; i <= n; i = i + 2 ) {
+			sum += ( 1 / ( double )i );
 	}
-}
+	
+	printf( "Sum of series = %lf", sum ); 
+	
+	return 0;
 
+}

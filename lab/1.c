@@ -1,9 +1,8 @@
-//Display your name
+/*Display your name*/
 #include <stdio.h>
 
-int main()
-{
-	printf("Amaan");
+int main() {
+	printf( "Amaan" ); 
 	return 0;
 }
 

@@ -1,25 +1,21 @@
-// Display star pattern
-/* 	   *
-      **
-     ***
-    ****
+/*Display the following pattern (using loops):
+	**
+	***
+	****
+	*****
 */
-   
 #include <stdio.h>
 
-int main()
-{
-	int i, j, k;
+int main() {
+	int i, j;
 	
-	for(i = 0; i < 5; ++i)
-	{	
-		for(k = 3; k >= j; k--)
-		printf(" ");
-		
-		for(j = 1; j <= i; ++j)
-		printf("*");
-		
-	printf("\n");	
-	
+	for( i = 2; i <= 5; i++ ) {
+		for ( j = 1; j <= i; j++ ) {
+			printf( "*" );
+		}
+		printf( "\n" );
 	}
+
+	return 0;
 }
+

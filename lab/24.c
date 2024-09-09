@@ -1,16 +1,17 @@
-//Display 1 2 2 3 3 3 4 4 4 4 ...
+// Display table of all integers from 2 to 10
+// (2x1=2, 2x2=4, ……., 10x10=100)
 #include <stdio.h>
 
-int main(void)
-{
-	int i, j, n;
+int main() {
+	int i, j;
+	for ( j = 2; j <= 10; j++ ) {
+		for ( i = 1; i <= 10; i++ ) {
+			printf( "%d x %d = %d\n", j, i, j * i );
+		}
+		printf( "\n" );
 	
-	printf("Enter 'n': ");
-	scanf("%d", &n);
-	
-	for (i = 1; i <= n; i++)
-	{
-		for (j = 1; j <= i; ++j)
-			printf("%d ", i);
 	}
+	
+	return 0;
+
 }

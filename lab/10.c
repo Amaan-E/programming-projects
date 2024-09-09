@@ -1,42 +1,27 @@
-//Compare three integers using nesting of if-else
+/*Use nesting of if-else (compare three numbers)*/
 #include <stdio.h>
 
-int main()
-{
-    int a, b, c;
+int main() {
+	int x, y, z;
+	printf( "Enter three numbers to compare them: \n" );
+	scanf( "%d %d %d", &x, &y, &z );
 
-    printf("Enter First Integer: ");
-    scanf("%d", &a);
-    printf("Enter Second Integer: ");
-    scanf("%d", &b);
-    printf("Enter Third Integer: ");
-    scanf("%d", &c);
-
-    if (a > b)
-    {
-        if (a > c)
-        {
-            printf("%d is the largest number.", a);
-        }
-        else
-        {
-            printf("%d is the largest number.", c);
-        }
-    }
-    else if (b > a)
-    {
-        if (b > c)
-        {
-            printf("%d is the largest number.", b);
-        }
-        else
-        {
-            printf("%d is the largest number.", c);
-        }
-    }
-    else
-		printf("All are equal.");
-
-
-    return 0;
+	if( x > y ) {
+		if ( x > z) {
+			printf( "%d is greater than %d and %d.", x, y, z );
+		} else {
+			printf( "%d is greater than %d and %d.", z, x, y );
+		}
+	} else if( y > x ) {
+		if ( y > z) {
+			printf( "%d is greater than %d and %d.", y, x, z );
+		} else {
+			printf( "%d is greater than %d and %d.", z, x, y );
+		}
+	} else {
+		printf( "All are equal." ); 
+	}
+	
+	return 0;
 }
+

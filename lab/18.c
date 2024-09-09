@@ -1,17 +1,17 @@
-//Display product of series from 1 to n
+// Find factorial of a number entered by the user
 #include <stdio.h>
 
-int main(void)
-{
-	int i, n, fac = 1;
+int main() {	
+	int f = 1, n, x;
 	
-	printf("Enter postive integer: ");
-	scanf("%d", &n);
+	printf( "Enter a number to find its factorial: ");
+	scanf( "%d", &n );
+	x = n;
 	
-	for (i = 1; i <= n; ++i)
-	{
-		fac *= i;
+	for ( ; n >= 2; n-- ) {
+		f = f * n;
 	}
-	
-	printf("Factorial of %d = %d ", n, fac);
+	printf( "%d! = %d", x, f );
+	return 0;
 }
+

@@ -1,20 +1,36 @@
-// Search for an element in integer array
+/* Demonstrate the use of string library functions: strlen(), strcpy(), strrev(), strcat(), strcmp() etc. using examples. */
 #include <stdio.h>
+#include <string.h>
 
-int main()
-{	
+#define N 100
 
-	int i, a[5] = {1, 2, 3, 4, 5}, find = 3, flag = 0;
+int main() {
 	
-	for(i = 0; i < 4; i++)
-	{
-		if(a[i] == find)
-		{
-			printf("Found at position %d.", i + 1);
-			flag = 1;
-		}
-	}	
+	char s[ N ];
+	printf( "Enter string: " );
+	scanf( "%s", s );
 	
-	if(flag == 0)
-		printf("Not found");
+	printf( "The length of the string is : %lld\n", strlen( s ) );
+	printf( "\n" );
+	char d[ N ];
+	strcpy( d, s );
+	printf( "String 's': %s \nCopied String 'd': %s\n", s, d );
+	
+	printf( "\n" );
+	printf( "Reversed string: %s", strrev( s ) );
+	
+	printf( "\n" );
+	printf ( "\nEnter two string to concatenate/join them:\n" );
+	printf( "Enter string 1: " );
+	scanf( "%s", s );
+	printf( "Enter string 2: " );
+	scanf( "%s", d );
+	printf( "Concatenated string: %s", strcat( s, d ) );
+	
+	printf( "\n" );
+	printf( "Compare: %d",  strcmp( s, d ) );
+	
+	
+	return 0;
 }
+

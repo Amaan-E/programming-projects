@@ -1,17 +1,13 @@
-//Sum two integers
+/*Add two numbers and display the result*/
 #include <stdio.h>
 
-int main()
-{
+int main() {
 	int a, b;
+	printf( "Enter two to be added: " );
+	scanf( "%d %d", &a, &b );
 	
-	printf("Enter First Integer: ");
-	scanf("%d", &a);
-	printf("Enter Second Integer: ");
-	scanf("%d", &b);
-
-	printf("Sum of %d + %d = %d", a, b, a + b);
-	
+	printf( "%d + %d = %d", a, b, a + b ); 
+	 
 	return 0;
 }
 

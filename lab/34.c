@@ -1,26 +1,24 @@
-/* Display Pyramid
+/*Display the following pattern (using loops):
+	*****
+	***
+	**
 	*
-   * *
-  * * *
- * * * *
 */
 #include <stdio.h>
 
-int main()
-{
-	int i, j, k, l;
+int main() {
+	int i, j;
 	
-	for(i = 0; i <= 4; ++i)
-	{	
-		for(k = 4; k >= j; k--)
-		printf(" ");
-		
-		for(j = 1; j <= i; ++j)
-		{
-			printf("* ");
+	for( i = 5; i >= 1; i-- ) {
+		for ( j = 1; j <= i; j++ ) {
+			if ( j == 4 ) {
+				continue;
+			}
+			printf( "*" );
 		}
-		
-	printf("\n");	
-	
+		printf( "\n" );
 	}
+
+	return 0;
 }
+
