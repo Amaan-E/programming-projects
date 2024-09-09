@@ -1,15 +1,15 @@
-//Display series from n to 1 as n n-1 n-2 3 2 1 
+/*Display the series (using loops): n n-1 n-2 …. 3 2 1*/
 #include <stdio.h>
 
-int main()
-{
-	int i, n;
+int main() {
+	int n;
+	printf( "Enter n: " );
+	scanf( "%d", &n );
 	
-	printf("Enter 'n': ");
-	scanf("%d", &n);
-	
-	for (n; n >= 1; --n)
-	{
-		printf("%d ", n);
+	for( ; n >= 1; n-- ) {
+		printf( "%d ", n );
 	}
+	
+	return 0;
 }
+

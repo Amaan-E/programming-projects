@@ -1,21 +1,19 @@
-//Input a string from the user and display it in reverse
-
+/*Input a string from the user and display the same.*/
 #include <stdio.h>
 
-int main()
-{
-	int i; 
-	char string[100];
+#define N 100
 
-	printf("Enter string: ");
-	scanf("%s", &string);
+int main() {
+	char a[ N ];
+	printf( "Enter string: " );
+	scanf( "%s", a );
 	
-	for(i = 0; string[i] != '\0'; ++i)
-	;
-	
-	for(i = i - 1; i >= 0; --i)
-	{
-		printf("%c", string[i]);
-	
+	int i;
+	printf( "Entered: " );
+	for ( i = 0; a[ i ] != '\0'; i++ ) {
+		printf( "%c", a[ i ] );
 	}
+	
+	return 0;
 }
+

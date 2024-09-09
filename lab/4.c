@@ -1,21 +1,17 @@
-//Swap two integers
+/*Swap two numbers */
 #include <stdio.h>
 
-int main()
-{
-	int a, b;
+int main() {
+	int x, y;
+	printf( "Enter two numbers to swap them: \n" );
+	scanf( "%d %d", &x, &y );
 	
-	printf("Enter First Integer: ");
-	scanf("%d", &a);
-	printf("Enter Second Integer: ");
-	scanf("%d", &b);
-
-	a = a + b;
-	b = a - b;
-	a = a - b;
+	x = x + y;
+	y = x - y;
+	x = x - y;
 	
-	printf("Swapped: %d %d", a, b);
-
+	printf( "The numbers after swapping are %d and %d.", x, y );
+	
 	return 0;
 }
 

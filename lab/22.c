@@ -1,26 +1,18 @@
-// Display Fibonacci series: 0 1 1 2 3 5 8 13 21.... n
-
+/*Display the series: 2 4 16 256 65536 ....... (n terms)*/
 #include <stdio.h>
-int main() 
-{
-	int i, n, a = 0, b = 1;
+#include <math.h>
 
-	int c = a + b;
-
-	printf("Enter the number of terms: ");
-	scanf("%d", &n);
-
-	// print the first two terms
-	printf("Fibonacci Series: %d, %d, ", a, b);
-
-	for (i = 1; i <= n - 2; ++i) //subtract first two terms 
-	{
-		printf("%d, ", c);
-		a = b;
-		b = c;
-		c = a + b;
+int main() {
+	int i, n;
+	long long int x = 2;
+	
+	printf( "Enter n: " );
+	scanf( "%d", &n );
+	
+	for ( i = 1; i <= n;  i++) {
+		printf( "%lld ", x );
+		x *= x;
 	}
-
 	return 0;
 }
 

@@ -1,45 +1,47 @@
-//store details of all students in array of structure and display in a tabular format
+//Display Fibonacci series up to n terms using recursion.
 #include <stdio.h>
-#define N 200
-#define LENGTHOFDASH 75
 
-struct details {
-    char name[100];
-    int roll;
-    int sem;
-    char grade;
-};
+int fibonacci( int n );
 
 int main() {
-    int i, total;
-    struct details d[N];
-    
-    printf( "Enter total no. of students: " );
-    scanf( "%d", &total );
-    
-    for ( i = 0; i < total; ++i ) {
-        printf( "Details of student with roll number %d:\n", i + 1 );
-        printf( "Enter Name: " );
-        scanf( "%s", &d[ i ].name );
-        printf("Enter Semester: " );
-        scanf( "%d", &d[ i ].sem );
-        printf( "Enter Grade: " );
-        scanf( " %c", &d[ i ].grade );
-        d[i].roll = i + 1;
-        printf( "\n" );
-    }
-    
-	printf ( "Name\t\tRoll No.\tSemester\tGrade\n" );
 	
-	for ( i = 0; i < LENGTHOFDASH; ++i ){
-		printf ( "-" );
-	}
-	printf ( "\n" ); //Decoration dashes(--)
-    
-    for ( i = 0; i < total; ++i ) {
-		printf( "%s\t\t%d\t\t%d\t\t%c\n", d[ i ].name, d[ i ].roll, d[ i ].sem, d[ i ].grade );
-	} 
-    
-    return 0;
+	int n;
+	
+	printf( "Enter n: " );
+	scanf( "%d", &n );
+	
+	for ( int i = 0; i < n; i++ ) {
+        printf( "%d ", fibonacci( i ) );
+    }
+	
+	return 0;
+
 }
 
+int fibonacci( int n ) {
+	if ( n == 0 ) {
+        return 0;
+    }
+    else if ( n == 1 ) {
+        return 1;
+    }
+	return fibonacci( n - 1 ) + fibonacci( n - 2 );
+}
+
+/* Non recursion
+void fibonacci( int n ) {
+	int i, a, b, c = 0;
+	
+	a = 0;
+	b = 1;
+		
+	for ( i = 0; i <= n; i++ ) {
+		printf( "%d ", c );
+		c = a + b;
+		a = b;
+		b = c;
+		
+	}
+}
+
+*/

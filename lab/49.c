@@ -1,36 +1,29 @@
-// Sum of two matrices
+/*Input a matrix from the user and display it.*/
 #include <stdio.h>
-#define ROW_MAX_SIZE 10
-#define COL_MAX_SIZE 10
 
-int main ( void ) {
-	int row, col, rowSize, colSize;
-	int matrix1 [ ROW_MAX_SIZE ] [ COL_MAX_SIZE ];
-	int matrix2 [ ROW_MAX_SIZE ] [ COL_MAX_SIZE ];
+#define N 10
+
+int main() {
+	int a[ N ][ N ], m, n, i, j; 
 	
-	printf( "Enter rank of matrices: \n" );
-	scanf( "%d%d", &rowSize, &colSize );
+	printf( "Enter rank of matrix as 'm n': ");
+	scanf( "%d %d", &m, &n );
 	
-	printf( "Enter elements of matrix 1(row-wise): \n" );
-	for ( col = 0; col < colSize; ++col ) {
-		for ( row = 0; row < rowSize; ++row ) {
-			scanf( "%d", &matrix1[ row ][ col ] );
+	printf( "Enter elements of matrix row-wise:\n" );
+	for ( i = 0; i < m; i++ ) {
+		for ( j = 0; j < n; j++ ) {
+			scanf( "%d", &a[ i ][ j ] );
 		}
 	}
 	
-	printf( "Enter elements of matrix 2(row-wise): \n" );
-	for ( col = 0; col < colSize; ++col ) {
-		for ( row = 0; row < rowSize; ++row ) {
-			scanf( "%d", &matrix2[ row ][ col ] );
-		}
-	}
-	
-	printf( "Sum of two matrices: \n" );
-	for ( col = 0; col < colSize; ++col ) {
-		for ( row = 0; row < rowSize; ++row ) {
-			printf( "%d ", matrix1[ row ][ col ] + matrix2[ row ][ col ] );
+	printf( "Entered matrix:\n" );
+	for ( i = 0; i < m; i++ ) {
+		for ( j = 0; j < n; j++ ) {
+			printf( "%d ", a[ i ][ j ] );
 		}
 		printf( "\n" );
 	}
 	
+	return 0;
 }
+

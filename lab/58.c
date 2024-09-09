@@ -1,29 +1,31 @@
-// Store details of a student in a structure and display the same
+//Implement Ackermann Function using recursion.
 #include <stdio.h>
 
-struct details {
-	char name[ 100 ]; 
-	char lName[ 100 ];
-	int roll;
-	int sem;
-	char grade;
-};
+int ackermann( int m, int n );
 
 int main() {
-	struct details d;
-	printf( "Enter First name: " );
-	scanf( "%s", &d.name );
-	printf( "Enter Last name: " );
-	scanf( "%s", &d.lName );
-	printf( "Enter Roll No.: " );
-	scanf( "%d", &d.roll );
-	printf( "Enter Semester: " );
-	scanf( "%d", &d.sem );
-	printf( "Enter Grade:" );
-	scanf( " %c", &d.grade );
+	
+	int m, n;
+	
+	printf( "Enter 'm n': " );
+	scanf( "%d %d", &m, &n );
+	
+	printf( "The answer is %d.s", ackermann( m, n ) );
+	
+	return 0;
 
-	printf( "Name 	 : %s %s\n", d.name, d.lName );
-	printf( "Roll No. : %d\n", d.roll );
-	printf( "Semester : %d\n", d.sem );
-	printf( "Grade    : %c", d.grade );
 }
+
+int ackermann( int m, int n ) {
+	if ( m == 0 ) {
+        return n + 1;
+    }
+    else if ( m > 0 && n == 0 ) {
+        return ackermann( m - 1, 1 );
+    } else {// if ( m > 0 && n > 0) {
+		return ackermann( m - 1, ackermann( m, n - 1 ) );
+    }
+    
+    
+}
+

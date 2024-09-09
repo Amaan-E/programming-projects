@@ -1,16 +1,24 @@
-// Table from 2 to 10
+// Display the Fibonacci series: 0 1 1 2 3 5 8 13 21 ....... (n terms)
 #include <stdio.h>
-int main() {
-	int n, i;
-				
-	for(n = 2; n <= 10; n++)
-	{
-		for (i = 1; i <= 10; ++i) 
-  		{
-    	printf("%d * %d = %d \n", n, i, n * i);
-  		}
-  	printf("\n");
-	}
-  	return 0;
-}
 
+int main() {
+	
+	int a, b, c = 0, n, i;
+	
+	a = 0;
+	b = 1;
+	
+	printf( "Enter n: " );
+	scanf( "%d", &n );
+	
+	for ( i = 0; i <= n; i++ ) {
+		printf( "%d ", c );
+		c = a + b;
+		a = b;
+		b = c;
+		
+	}
+	
+	return 0;
+
+}

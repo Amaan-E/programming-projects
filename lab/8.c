@@ -1,47 +1,29 @@
-// Calculates roots of quadratic equation along with the complex case without using <complex.h>
+/* Find roots of a quadratic equation */
 #include <stdio.h>
 #include <math.h>
 
-int main()
-{
-	double a, b, c, d, root_one, root_two, i, im, r;
+int main() {
+	int a, b, c, d, rootOne, rootTwo;
 	
-	printf("Enter coeffecients: \n");
-	scanf("%1lf%1lf%1lf", &a, &b, &c);
-//	scanf("%lf%lf%lf", &a, &b, &c);
+	printf( "Enter values of a, b and c from a(x^2)+bx+c = 0: " );
+	scanf( "%d %d %d", &a, &b, &c );
 	
+	d = ( b * b ) - ( 4 * a * c );
+	
+	if ( d < 0 ) {
+		printf( "Roots are complex." );
+	} else if ( d > 0 ) {
+		rootOne = ( - b + sqrt( d ) ) / ( 2 * a );
+		rootTwo = ( - b - sqrt( d ) ) / ( 2 * a );
+		printf( "The roots are : %d %d", rootOne, rootTwo );
+		
+	} else {
+		rootOne = ( - b + sqrt( d ) ) / ( 2 * a );
+		printf( "The roots are equal: %d", rootOne );
+	}
 
-	
-	if (a == 0)
-	{
-		printf("You have entered a linear equation where value of x is %.2lf.\n", -c / b);
-	}
-	
-	d = b * b - (4 * a * c);
-	
-	if (d > 0)
-	{
-		root_one = ((-b) + sqrt(d)) / (2 * a);
-		root_two = ((-b) - sqrt(d)) / (2 * a);
-		printf("The roots are %.2lf and %.2lf.\n", root_one, root_two);
-	}
-	
-	else if (d == 0)
-	{
-		root_one = (-b) / (2 * a);
-		printf("The roots are %.2lf and %.2lf.\n", root_one, root_one);
-	}
-	
-	else if (d < 0)
-	{
-	
-		r = sqrt(-d);
-	
-		printf("%.2lf +- %.2lfi", (-b) / (2 * a), r / (2 * a));
 		
 	
-	}
-	
 	return 0;
-	
 }
+

@@ -1,26 +1,25 @@
-//factorial using function using recursion
-#include<stdio.h>
+//Swap two numbers using functions (call-by-value method).
 
-long int fact ( int );
+#include <stdio.h>
+void swap( int a, int b );
 
-int main() {
-    int n;
-    long int ans;
-    printf( "Enter a positive integer: " );
-    scanf( "%d", &n );
-    ans = fact( n );
-    printf( "Factorial = %li", n, ans );
+int main( ) {
+	int a, b;
+	
+	printf( " Enter two numbers: " );
+	scanf( "%d %d", &a, &b );
+	
+	printf( "Entered : %d %d ", a, b );
+	
+	swap( a, b );
+
+	return 0;
 }
 
-/*
-===================
-Find Factorial
-===================
-*/
-long int fact ( int n ){
-    if( n > 1 ) {
-        return n * fact ( n - 1 );
-    }
-    else
-    	return 1;
+void swap( int a, int b ) {
+	a = a + b;
+	b = a - b;
+	a = a - b;
+	
+	printf( "Swapped : %d %d ", a, b );
 }

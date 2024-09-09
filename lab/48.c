@@ -1,30 +1,27 @@
-// Transpose of a matrix
-#include <stdio.h>
-#define ROW_MAX_SIZE 10
-#define COL_MAX_SIZE 10
+/* Sort an integer array using functions and pointers. */
 
-int main ( void ) {
-	int row, col, rowSize, colSize;
-	int matrix1 [ ROW_MAX_SIZE ] [ COL_MAX_SIZE ];
-	int matrix2 [ ROW_MAX_SIZE ] [ COL_MAX_SIZE ];
+
+#include <stdio.h>
+#define N 20
+
+int main( ) {
+	int a[ N ] = { 5, 1, 3, 4, 2 }, i, c, j;
 	
-	printf( "Enter rank of matrices: \n" );
-	scanf( "%d%d", &rowSize, &colSize );
-	
-	printf( "Enter elements of matrix(row-wise): \n" );
-	for ( col = 0; col < colSize; ++col ) {
-		for ( row = 0; row < rowSize; ++row ) {
-			scanf( "%d", &matrix1[ row ][ col ] );
-		}
+	int n = 5;
+	for ( i = 0; i < n - 1; i++ ) { // n-1 passes
+        for ( j = 0; j < n - i - 1; j++ ) { // Last i elements are already sorted
+            if ( a[ j ] > a[ j + 1 ] ) {
+                c = a[ j ];
+                a[ j ] = a[ j + 1];
+                a[ j + 1 ] = c;
+            }
+        }
+    }
+
+	for ( i = 0; i < n; i++ ) {
+		printf( "%d ", a[ i ] );
 	}
 	
-	printf( "Transpose: \n" );
-	for ( col = 0; col < colSize; ++col ) {
-		for ( row = 0; row < rowSize; ++row ) {
-			matrix2[ row ][ col ] = matrix1[ col ][ row ];
-			printf( "%d ", matrix2[ row ][ col ] );
-		}
-		printf( "\n" );
-	}
-	
+	return 0;
 }
+

@@ -1,23 +1,28 @@
-// Ackerman using function
-#include<stdio.h>
-
-int ackerman(int, int);
+//Add and subtract two integers using functions (a+b, a-b, b-a)
+	
+#include <stdio.h>
+int add( int a, int b );
+int sub( int a, int b );
 
 int main() {
-    int m, n, result;
-    printf( "Enter the values of 'm' and 'n': \n" );
-    scanf( "%d%d", &m, &n );
-    result = ackerman( m,n );
-    printf( "Ackerman(%d, %d)= %d \n", m, n, result );
+	int a, b;
+	
+	printf( " Enter two numbers: " );
+	scanf( "%d %d", &a, &b );
+	
+	printf( "Entered : %d %d \n", a, b );
+	
+	printf( "%d + %d = %d \n", a, b, add( a, b ) );
+	printf( "%d - %d = %d \n", a, b, sub( a, b ) );
+	printf( "%d - %d = %d \n", b, a, sub( b, a ) );
+
+	return 0;
 }
-int ackerman( int m, int n ){
-    if ( m==0 ){
-        return n + 1;
-    }
-    else if( m > 0 && n == 0 ) {
-        return ackerman( m - 1, 1 );
-    }
-    else if ( m > 0 && n > 0 ){
-        return ackerman( m - 1, ackerman( m, n - 1 ) );
-    }
+
+int add( int a, int b ) {
+	return a + b;
+}
+
+int sub( int a, int b ) {
+	return a - b;
 }
