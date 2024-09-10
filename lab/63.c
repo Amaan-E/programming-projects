@@ -17,21 +17,21 @@ int main() {
 	scanf( "%d", &n );
 	
 	printf( "\n" );
-	for ( i = 1; i <= n; i++ ) {
-		printf( "Enter details of student %d.\n", i );
+	for ( i = 0; i <= n - 1; i++ ) {
+		printf( "Enter details of student %d.\n", i + 1);
 //		printf( "Enter Roll No.: " );
 //		scanf( "%d", &d[ i ].roll );
-//		d[ i ].roll = i;
+		d[ i ].roll = i + 1;
 		printf( "Enter Name: " );
 		scanf( "%s", d[ i ].name ); // Remove & to get rid of warning
 		printf( "Enter Marks: " );
-		scanf( " %d", &d[ i ].marks );
+		scanf( "%d", &d[ i ].marks );
 		printf( "\n" );
 	}
 	
 	printf( "Roll no.  Name \t Marks\n");
 	printf( "-------------------------------------------------------------\n" );
-	for ( i = 1; i <= n; i++ ) {	
+	for ( i = 0; i <= n - 1; i++ ) {	
 		printf ( "%d \t %s \t %d\n", i, d[ i ].name, d[ i ].marks );
 	}
 	
@@ -42,10 +42,10 @@ int main() {
 //	printf( "Enter total: " );
 	
 	
-	for ( i = 1; i <= n; i++ ) {	
+	for ( i = 0; i <= n - 1; i++ ) {	
 		if ( d[ i ].marks > highestMarks ) {
 			highestMarks = d[ i ].marks;
-			topper = i;
+			topper = d[ i ].roll;
 			
 		//	strcpy( topperName, d[ i ].name );
 			for ( int j = 0; d[ i ].name[ j ] != '\0'; j++ ) {
