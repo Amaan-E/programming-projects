@@ -32,7 +32,7 @@ int main() {
 	printf( "Roll no.  Name \t Marks\n");
 	printf( "-------------------------------------------------------------\n" );
 	for ( i = 0; i <= n - 1; i++ ) {	
-		printf ( "%d \t %s \t %d\n", i, d[ i ].name, d[ i ].marks );
+		printf ( "%d \t %s \t %d\n", d[ i ].roll, d[ i ].name, d[ i ].marks );
 	}
 	
 	printf( "\n" );
