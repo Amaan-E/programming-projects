@@ -23,7 +23,7 @@ int main() {
 //		scanf( "%d", &d[ i ].roll );
 		d[ i ].roll = i + 1;
 		printf( "Enter Name: " );
-		scanf( "%s", d[ i ].name ); // Remove & to get rid of warning
+		scanf( "%s", d[ i ].name );
 		printf( "Enter Marks: " );
 		scanf( "%d", &d[ i ].marks );
 		printf( "\n" );
