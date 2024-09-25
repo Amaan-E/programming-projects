@@ -1,4 +1,4 @@
-/* Sort an integer array using functions and pointers. */
+/* Sort an integer array using Bubble Sort. */
 
 
 #include <stdio.h>
