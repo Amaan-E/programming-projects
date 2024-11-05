@@ -1,4 +1,4 @@
-// Checks whether number is even or odd
+// Checks whether number is even or odd.
 #include <iostream>
 
 int main() {

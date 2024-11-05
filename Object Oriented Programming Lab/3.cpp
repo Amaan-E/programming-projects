@@ -1,4 +1,4 @@
-// Reverses digits of a number
+// Reverses a number.
 #include <iostream>
 
 int main() {

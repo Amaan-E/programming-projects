@@ -1,4 +1,4 @@
-// Calculates percentage of marks of student in subjects(5)
+// Calculates percentage of marks of student in subjects(5).
 #include <iostream>
 
 #define SUBJECTS 5

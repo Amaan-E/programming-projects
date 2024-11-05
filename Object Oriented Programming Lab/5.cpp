@@ -1,4 +1,4 @@
-// Checks whether a character is vowel
+// Checks if an alphabet is a vowel or not.
 #include <iostream>
 
 int main() {
