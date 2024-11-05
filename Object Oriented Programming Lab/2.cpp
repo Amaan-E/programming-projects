@@ -1,4 +1,4 @@
-// Calculates digits of a number
+// Calculates digits of a number.
 #include <iostream>
 
 int main() {

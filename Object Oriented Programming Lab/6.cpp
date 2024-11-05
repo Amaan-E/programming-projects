@@ -1,36 +1,24 @@
-// checks whether a word is a Palindrome or not
+// Checks whether a number is a palindrome or not.
 #include <iostream>
 
-#define N 100
-
 int main() {
-	char word[ N ] {};
-	std::cout << "Enter a word: ";
-	std::cin >> word;
+	int number {};
+	std::cout << "Enter a number: ";
+	std::cin >> number;
 	
-	char *q { word };
-	while ( *q ) {
-		// To convert to lower case
-		if ( *q >= 'A' && *q <= 'Z' ) { 
-		// 'a' = ASCII value, 'A' = ASCII Value
-			*q += ( 'a' - 'A' ); 
-		}
-		++q;
-	}
-	--q;
-	
-	char *p { word };
-	while ( p < q ) {
-		if ( *p != *q ) {
-			std::cout << word << " is not a palindrome.";
-			return 0;
-		}
-		++p;
-		--q;
+	int enteredNumber { number };
+	int reversed { 0 };
+	while ( number != 0 ) {
+		reversed = ( reversed * 10 ) + ( number % 10 );
+        number = number / 10;
 	}
 	
-	std::cout << word << " is a palindrome.";
-	
+	if ( reversed  == enteredNumber ) {
+		std::cout << enteredNumber << " is a palindrome.";
+	} else {
+		std::cout << enteredNumber << " is not a palindrome.";
+	}
+
 	return 0;
 }
 
