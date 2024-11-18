@@ -11,41 +11,41 @@ int main( void ) {
 	for ( ;; ) {
 		std::cout << "\nEnter 1 for Non-Vegetarian, 2 for Vegetarian\n" 
 				     " or anything else to exit: ";
-		int input{};
+		char input{};
 		std::cin >> input;
 		switch ( input ) {
-			case 1: {
+			case '1': {
 				std::cout << "Enter 1 for Kebab, 2 for Chicken Biryani, 3 for Steak\n"
-							 " or anything else to go back: ";
-				int nonVeg{};
+							 " or any other character to go back: ";
+				char nonVeg{};
 				std::cin >> nonVeg;
 				switch ( nonVeg ) {
-					case 1:
+					case '1':
 						std::cout << "You ordered Kebab.\n";
 						break;
-					case 2:
+					case '2':
 						std::cout << "You ordered Chicken Biryani.\n";
 						break;
-					case 3:
+					case '3':
 						std::cout << "You ordered Steak.\n";
 						break;
 					default:
 						break;
 				}
 				break;
-			} case 2: {
+			} case '2': {
 				std::cout << "Enter 1 for Saag, 2 for Daal Makhni, 3 for Salad\n"
-							 " or anything else to go back: ";
-				int veg{};
+							 " or any other character to go back: ";
+				char veg{};
 				std::cin >> veg;
 				switch ( veg ) {
-					case 1:
+					case '1':
 						std::cout << "You ordered Saag.\n";
 						break;
-					case 2:
+					case '2':
 						std::cout << "You ordered Daal Makhni.\n";
 						break;
-					case 3:
+					case '3':
 						std::cout << "You ordered Salad.\n";
 						break;
 					default:
