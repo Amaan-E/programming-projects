@@ -31,6 +31,5 @@ int main() {
 	} else {
 		std::cout << "Invalid marks.\n";
 	}
-
 	return 0;
 }
