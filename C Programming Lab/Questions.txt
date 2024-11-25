@@ -84,7 +84,7 @@ enters 3 and Incorrect Option when user enters any other number
 	   *
 	  * *
 	*  *  *
-      *  *  *  *
+   *  *  *  *
     
 37. Display contents of an integer array.
 38. Input an integer array from the user and display the same.
