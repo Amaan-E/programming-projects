@@ -16,7 +16,7 @@
 const int N = 7;
 
 int main( void ) {
-	std::cout << "Enter a number(upto 6 digits): ";
+	std::cout << "Enter a number: ";
 	char input {};
 	long output {0};
 	for ( int i {0}; i < N; ++i ) {
@@ -24,6 +24,9 @@ int main( void ) {
 		if ( input == '\r' ) {
 			std::cout << "\nNumber is: " << output;
 			break;
+		}
+		if ( i >= 6 ) {
+			std::cout << "\nOnly upto 6 digits.\n";
 		}
 		output = output * 10 + ( input - '0' );
 	}
