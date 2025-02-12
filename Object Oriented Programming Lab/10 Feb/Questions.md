@@ -1,4 +1,4 @@
-### C++ Programming Lab Dated: 12/02/2025
+### C++ Programming Lab Dated: 10/02/2025
 
 ### Program 1: Basic Function Definition
     Write a C++ program that defines a function sum(int a, int b) that takes two
