@@ -1,0 +1,123 @@
+<!-- Table ke bad and tr se pehle caption -->
+<!-- Can use -->
+<!-- horizontal list
+ row span col span
+ with atleast 2 three rows -->
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        header {
+            background-color: grey;
+            padding: 0.1%;
+            border-bottom: 2px solid black;
+        }
+        
+        li {
+            display: inline;
+            align-items: center;
+            padding: 1rem;
+            margin: auto;
+        }
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        body {
+            font-family: sans-serif;
+        }
+        
+        .tables {
+            display: flex;
+            padding: 2%;
+        }
+        
+        table {
+          border-collapse: collapse;
+          margin: 2%;
+          border: 2px solid grey;
+          width: 50%;
+        }
+        
+        th, td {
+          border: 1px solid darkgrey;
+          padding: 1%;
+        }
+        
+        .caption-box {
+            color: dimgrey;
+            border: 2px solid grey;
+            border-bottom: 0;
+            font-family: sans-serif;
+            background-color: lightgrey;
+            padding: 0.5%;
+        }
+
+    </style>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+        <title>Tables</title>
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#About">About Us</a></li>
+                <li><a href="#Blog">Blog</a></li>
+            </ul>
+        </header>
+        <main>
+            <div class="tables">
+            <table>
+                <caption><div class="caption-box">Student with Roll no.</div></caption>
+                <tr>
+                    <th colspan="2">Name</th>
+                    <th>Roll no.</th>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>3</td>
+                </tr>
+            </table>
+            <table>
+                <caption><div class="caption-box">Student with Phone no.</div></caption>                
+                <tr>
+                    <th>Name</th>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Ph No.</th>
+                    <td>435456</td>
+                    <td>805687</td>
+                    <td>34890</td> 
+                </tr>
+                <tr>
+                    <td>45646</td>
+                    <td>456</td>
+                    <td>78907</td> 
+                </tr>
+            </table>
+            </div>
+        </main>
+    </body>
+
+</html>
