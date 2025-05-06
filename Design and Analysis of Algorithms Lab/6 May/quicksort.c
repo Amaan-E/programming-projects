@@ -74,7 +74,8 @@ int Partition(int *array, unsigned int low, unsigned int high) {
     }
 
     Swap(&array[i + 1], &array[high]);
-    return i + 1;                 // Return the pivot index
+    // Return the pivot index
+    return i + 1;                 
 }
 
 /*
