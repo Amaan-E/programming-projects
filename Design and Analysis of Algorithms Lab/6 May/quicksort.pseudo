@@ -1,0 +1,27 @@
+FUNCTION quicksort(array, low, high)
+    IF low < high THEN
+        // Partition the array and get the pivot index
+        pivotIndex = partition(array, low, high)
+
+        // Recursively sort elements before pivot
+        quicksort(array, low, pivotIndex - 1)
+
+        // Recursively sort elements after pivot
+        quicksort(array, pivotIndex + 1, high)
+    END IF
+END FUNCTION
+
+FUNCTION partition(array, low, high)
+    pivot = array[high]          // Choose the last element as pivot
+    i = low - 1                  // Index of smaller element
+
+    FOR j FROM low TO high - 1 DO
+        IF array[j] <= pivot THEN
+            i = i + 1
+            SWAP array[i] WITH array[j]
+        END IF
+    END FOR
+
+    SWAP array[i + 1] WITH array[high]
+    RETURN i + 1                 // Return the pivot index
+END FUNCTION
