@@ -1,0 +1,13 @@
+    body {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    textarea {
+        height: 7rem;
+    }
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+    }
