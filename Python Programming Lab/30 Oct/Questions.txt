@@ -1,0 +1,16 @@
+===========
+30 Oct 2025
+===========
+
+1. Find second largest number in array or list
+2. Using loops, print Fibonacci Series
+3. Print sum of numbers divisible by 5 from 1 to 100.
+4. Write a program to calculate monthly electricity bill for multiple
+    customers:
+          i) Input number of customers.
+         ii) Input name and units used.
+        iii) Compute Bill:
+              0-100uts  -> 2.5/u
+            101-200uts  -> 3.9/u
+                200uts  -> 5.0/u
+         iv) Display each bill and revenue collected.
