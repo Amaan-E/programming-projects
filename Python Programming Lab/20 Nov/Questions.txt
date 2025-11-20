@@ -1,0 +1,8 @@
+1. Check List of Books. Allow user to:
+    (a) Issue a book.
+    (b) Return a book.
+    (c) Check List.
+    (d) Impose fine @Re 1 after 15 days
+    (e) View available books.
+2. Check validity of email from user input.
+3. Bank Account Simulator
