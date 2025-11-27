@@ -1,0 +1,18 @@
+1. Maintaining a Student Result System with Sorting & Searching:
+    - Add Student (ID, ..., marks).
+    - Search by ID.
+    - Sort by Marks.
+    - Count Failures.
+    - Find Top 5.
+
+2. Group Words Containing the Same Letters Together:
+    - Input: An array or list of words.
+    - Output: A list of groups where each group contains words that are anagrams of each other. 
+        Group 1: {eat, tea, ate}
+        Group 2: {tan, nat, ant}
+
+3. Return Maximum Depth of a Binary Tree.
+
+4. Merge Sort
+
+5. Print next to largest using linked list.
