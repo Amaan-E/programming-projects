@@ -1,0 +1,15 @@
+Java Programming Lab
+1. Write a Java program to print the sum (addition), multiply, subtract, divide and remainder of
+two numbers.
+2. Write a Java program to print the area and perimeter of a circle and rectangle.
+3. Write a Java program to swap two variables with or without third variable.
+4. Write a Java program to compare two numbers.
+5. Write a Java program to accept a number and check whether the number is even or not.
+Prints 1 if the number is even or 0 if odd.
+6. Write a Java program that accepts three integers from the user and returns true if two or
+more of them (integers) have the same rightmost digit. The integers are non-negative.
+7. Any year is entered through the keyboard, write a program to determine whether the year is
+leap or not. Use the logical operators && and ||.
+8. Write a simple Java program to calculate a Factorial of a number.
+9. Write a program that takes the x – y coordinates of a point in the Cartesian plane and prints
+a message telling either an axis on which the point lies or the quadrant in which it is found.
