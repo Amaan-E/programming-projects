@@ -1,0 +1,37 @@
+Java Programming Lab (Arrays and Strings)
+
+1. Write a Java program to read n elements into a one-
+dimensional array and find the sum, average, maximum, and
+minimum values.
+
+2. Write a Java program to read n elements in a one-
+dimensional array and display the elements in reverse order
+and count the number of even and odd elements.
+
+3. Write a Java program to search for a given element in a one-
+dimensional array and display its position(s) if found.
+
+4. Write a Java program to read two one-dimensional arrays
+and merge them into a single array, then display the merged
+array in sorted order.
+
+5. Write a Java program to read a matrix using a two-
+dimensional array and compute the sum of each row and
+each column.
+
+6. Write a Java program to perform matrix addition and matrix
+subtraction using two-dimensional arrays.
+
+7. Write a Java program to check whether a given matrix is
+symmetric using a two-dimensional array.
+
+8. Write a Java program using a three-dimensional array to
+store marks of students for multiple classes and subjects and
+calculate total marks of each student.
+
+9. Write a Java program to read a string and count the number
+of vowels, consonants, digits, and special characters.
+
+10. Write a Java program to store multiple strings in an
+array and display them in alphabetical order, then find the
+longest string among them.
