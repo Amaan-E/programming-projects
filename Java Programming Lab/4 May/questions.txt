@@ -1,0 +1,48 @@
+Java Programming Lab (Classes and Objects)
+
+1. Write a Java program to create a class Calculator that accepts two numbers
+and an operator as input. Using objects, perform the required arithmetic
+operation, handle division by zero, and maintain the history of the last five
+calculations.
+
+2. Write a Java program to create a class Circle with radius as a data member.
+Using objects, calculate area and circumference, compare two circles based
+on area, and determine whether one circle can fit inside another.
+
+3. Write a Java program to create a class Rectangle with length and breadth as
+data members. Using objects, calculate area and perimeter, determine whether
+the rectangle is a square, and compare two rectangles based on area and
+diagonal length.
+
+4. Write a Java program to create a class Triangle with three sides as data
+members. Using objects, validate whether the sides form a triangle, identify
+its type (equilateral, isosceles, or scalene), and calculate its area using Heron's
+Formula.
+
+5. Write a Java program to create a class Student with marks in multiple subjects
+as data members. Using objects, calculate total marks, percentage, grade,
+identify failed subjects, and determine class rank among multiple students.
+
+6. Write a Java program to create a class Employee with basic salary, overtime
+hours, and leave deductions as data members. Using objects, calculate HRA,
+DA, tax deductions, bonuses, gross salary, and net salary according to salary
+slabs.
+
+7. Write a Java program to create a class BankAccount with account number,
+balance, and transaction limit as data members. Using objects, perform
+deposit and withdrawal operations, apply penalties for insufficient balance,
+and calculate monthly interest on the remaining balance.
+
+8. Write a Java program to create a class Interest with principal, rate, and time
+as data members. Using objects, calculate both simple interest and compound
+interest, compare the results, and display the difference in returns.
+
+9. Write a Java program to create a class ElectricityBill with consumer type and
+units consumed as data members. Using objects, calculate the bill using slab
+rates, apply taxes, subsidies, and late payment charges, and generate the final
+payable amount.
+
+10. Write a Java program to create a class Product with product ID, quantity, price
+per unit, expiry status, and discount category as data members. Using objects,
+calculate total cost, apply category-based discounts, add tax, and generate the
+final invoice.
