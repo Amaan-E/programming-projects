@@ -1,0 +1,252 @@
+Assignment 1: Electricity Bill Calculator Using Packages and Interfaces
+Problem Statement:
+A power distribution company wants to automate the process of calculating electricity bills for
+different categories of consumers. The billing rules are different for Domestic and Commercial
+consumers. Develop a Java application using packages and interfaces to calculate the monthly
+electricity bill.
+Create an interface BillCalculator containing a method calculateBill(). Implement this interface in
+two classes: DomesticConsumer and CommercialConsumer.
+Store the interface and implementation classes in a package named electricity, and create a separate
+package mainapp containing the driver program.
+The billing criteria are as follows:
+Consumer Type Rate per Unit
+Domestic ₹6 per unit
+Commercial ₹9 per unit
+
+The program should:
+Accept consumer name, consumer ID, and units consumed.
+Calculate the electricity bill based on the consumer type.
+Display complete bill details.
+Demonstrate the use of interfaces, packages, and runtime polymorphism.
+
+
+Assignment 2: Employee Salary Management System
+Problem Statement:
+An organization wants to automate salary calculations for its employees. Permanent employees
+receive House Rent Allowance (HRA) and Dearness Allowance (DA), whereas Contract
+employees are paid only based on their working hours.
+Create an interface SalaryCalculator with a method calculateSalary().
+Implement the interface in:
+PermanentEmployee
+ContractEmployee
+Create separate packages for employee classes and the main application.
+The program should:
+Accept employee details.
+Calculate gross salary for permanent employees:
+Gross Salary = Basic Pay + HRA (20%) + DA (10%)
+Calculate salary for contract employees:
+Salary = Hours Worked × Hourly Rate
+Display complete salary details.
+
+Assignment 3: Student Result Processing System
+Problem Statement:
+A university wants to develop a result processing system to calculate student percentages and
+grades.
+Create an interface Result with a method calculateGrade().
+Implement the interface in:
+
+UGStudent
+
+PGStudent
+The program should:
+
+Accept marks in five subjects.
+
+Calculate total marks and percentage.
+
+Assign grades according to the following criteria:
+Percentage Grade
+≥ 90
+A+
+≥ 80
+A
+≥ 70
+B
+≥ 60
+C
+< 60
+D
+Use packages to organize classes and demonstrate interface implementation.
+
+Assignment 4: Shape Area and Perimeter Calculator
+Problem Statement:
+Develop a geometry application that calculates the area and perimeter of various shapes.
+Create an interface Shape containing:
+
+calculateArea()
+
+calculatePerimeter()
+Implement the interface in:
+
+Circle
+
+Rectangle
+
+Triangle
+The program should:
+
+Accept dimensions from the user.
+
+Calculate area and perimeter for the selected shape.
+
+Display the results using polymorphism.
+Store all shape classes in a package named geometry.
+
+Assignment 5: Shopping Bill Generator
+Problem Statement:
+A shopping mall offers different discount rates on products. Develop a Java application that
+calculates the final payable amount after applying discounts.
+Create an interface Discountable containing a method calculateDiscount().
+Implement the interface for:
+
+Grocery Items (5% discount)
+
+Clothing Items (10% discount)
+
+Electronics Items (15% discount)
+The program should:
+
+Accept product details and quantity.
+
+Calculate total amount.
+
+Apply discount.
+
+Display final bill amount.
+Use packages to organize product classes and billing modules.
+
+
+Assignment 6: Vehicle Fuel Cost Estimator
+Problem Statement:
+Develop a system to estimate the fuel cost of a journey for different vehicle types.
+Create an interface FuelConsumption containing the method calculateFuelCost().
+Implement the interface for:
+
+Car
+
+Bike
+
+Bus
+The program should:
+
+Accept distance to be traveled.
+
+Accept fuel price per litre.
+
+Use the following mileage values:
+Vehicle Mileage
+Car
+15 km/l
+Bike
+45 km/l
+Bus
+5 km/l
+Calculate:
+
+Fuel Required
+
+Total Fuel Cost
+
+Assignment 7: Hotel Room Billing System
+Problem Statement:
+A hotel wants to automate room billing for its guests.
+Create an interface RoomBilling with method calculateBill().
+Implement:
+
+StandardRoom (₹1500/day)
+
+DeluxeRoom (₹3000/day)
+
+SuiteRoom (₹5000/day)
+The program should:
+
+Accept customer details.
+
+Accept number of days stayed.
+
+Calculate room charges.
+
+Add GST of 18%.
+
+Display the final bill.
+
+
+Assignment 8: Loan EMI Calculator
+Problem Statement:
+Develop a loan management system to calculate Equated Monthly Installments (EMI) for
+different loan types.
+Create an interface Loan.
+Implement:
+
+HomeLoan
+
+EducationLoan
+
+VehicleLoan
+The program should:
+
+Accept loan amount, tenure, and interest rate.
+
+Calculate EMI using the standard EMI formula.
+
+Display monthly EMI and total repayment amount.
+Use packages to separate loan classes from the main application.
+
+
+Assignment 9: Library Fine Calculation System
+Problem Statement:
+A university library charges fines for overdue books.
+Create an interface FineCalculator.
+Implement:
+
+StudentMember
+
+FacultyMember
+
+ExternalMember
+Fine Structure:
+Member Type Fine per Day
+Student
+₹2
+Faculty
+₹1
+External
+₹5
+The program should:
+
+Accept due date and return date.
+
+Calculate overdue days.
+
+Display fine amount. interfaces
+
+
+
+Assignment 10: Online Food Ordering System
+Problem Statement:
+Develop an online food ordering application using packages and interfaces.
+Create an interface FoodOrder containing method calculateBill().
+Implement:
+
+PizzaOrder
+
+BurgerOrder
+
+SandwichOrder
+The program should:
+
+Accept quantity ordered.
+
+Calculate item cost.
+
+Add GST of 5%.
+
+Generate a detailed bill showing:
+o Item Name
+o Quantity
+o Unit Price
+o GST
+o Final Amount
+Use runtime polymorphism to process different food orders through a common interface
+reference.
+
