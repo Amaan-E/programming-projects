@@ -1,0 +1,33 @@
+Java Interfaces and Exception Handling (Lab)
+1. Create an interface Shape containing methods to calculate the area and perimeter of a
+geometric figure. Implement the interface in classes such as Circle and Rectangle. Accept
+the required dimensions from the user and display the calculated area and perimeter for
+each shape.
+2. Create an interface InterestCalculator containing methods to calculate Simple Interest and
+Compound Interest. Accept the principal amount, rate of interest, and time period from the
+user and display the calculated interest values.
+3. Create an interface Result containing methods to calculate total marks, percentage, and
+grade. Accept marks obtained by a student in five subjects and display the total marks,
+percentage, and corresponding grade.
+4. Create an interface EmployeeSalary containing methods to calculate gross salary and net
+salary. Accept basic pay, HRA, DA, and other allowances from the user and generate a
+complete salary statement.
+5. Create an interface Account containing methods for deposit, withdrawal, and balance
+inquiry. Implement the interface in a class representing a savings account. Accept
+transaction details from the user and maintain the account balance after each operation.
+6. Create an interface containing static methods for addition, subtraction, multiplication,
+division, and modulus operations. Develop a menu-driven calculator program that allows
+users to perform arithmetic calculations.
+7. Create an interface ShoppingCart containing methods to calculate the subtotal, GST
+amount, discount amount, and final payable bill. Accept item prices and quantities from
+the user and generate a detailed bill.
+8. Develop a Java program to calculate the percentage of marks obtained by a student. Use
+exception handling to prevent division-by-zero errors and handle invalid numeric inputs
+entered by the user.
+9. Develop a Java program to calculate the EMI (Equated Monthly Installment) of a loan
+using the principal amount, annual interest rate, and loan tenure. Use exception handling
+to validate all user inputs and prevent invalid calculations.
+10. Develop a banking application using interfaces and exception handling. The application
+should calculate the available account balance after deposits and withdrawals. Generate
+and handle exceptions when the withdrawal amount exceeds the available balance or when
+invalid transaction amounts are entered.
